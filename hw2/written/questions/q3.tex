@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%
+% Triangular Robot 1
+%%%%%%%%%%%%%%%%
+\section{Triangular Robot 1}
+\bf{Rolling Constraints:}
+$$
+\begin{bmatrix} 
+sin(\alpha + \beta) & -cos(\alpha + \beta) & -lcos(\beta) \\
+& \vdots &
+\end{bmatrix}
+%% Times
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+-
+r \dot{\varphi}
+= 0
+$$
+\bf{Sliding Constraints:}
+$$
+\begin{bmatrix} 
+cos(\alpha + \beta) & sin(\alpha + \beta) & lsin(\beta) \\
+& \vdots &
+\end{bmatrix}
+%% Times
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+= 0
+$$
+
+\subsection{Rolling Constraints}
+$$
+\alpha_1 =  90, 
+\beta_1 = 0,
+l = \dfrac{\sqrt{3}}{2} * 40cm * \dfrac{1}{2}
+$$
+$$
+\alpha_2 =  225, 
+\beta_2 = 0,
+l = \dfrac{\sqrt{3}}{2} * 40cm * \dfrac{1}{2}
+$$
+$$
+\alpha_2 =  315, 
+\beta_2 = 0,
+l = \dfrac{\sqrt{3}}{2} * 40cm * \dfrac{1}{2}
+$$
+
+$$
+\begin{bmatrix} 
+1 & 0 & -17.32\\
+-.7 & .7 & -17.32\\
+-.7 & -.7 & -17.32\\
+\end{bmatrix} 
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+- r 
+ \begin{bmatrix} 
+\phi_1 \\
+\phi_2 \\
+\phi_3
+\end{bmatrix}
+= 0
+$$
+
+
+\subsection{Sliding Constraints}
+$$
+\alpha_1 =  90, 
+\beta_1 = 0,
+l = \dfrac{\sqrt{3}}{2} * 40cm * \dfrac{1}{2}
+$$
+$$
+\alpha_2 =  225, 
+\beta_2 = 0,
+l = \dfrac{\sqrt{3}}{2} * 40cm * \dfrac{1}{2}
+$$
+$$
+\alpha_2 =  315, 
+\beta_2 = 0,
+l = \dfrac{\sqrt{3}}{2} * 40cm * \dfrac{1}{2}
+$$
+$$
+\begin{bmatrix} 
+0 & 1 & 0\\
+-.7 & -.7 & 0\\
+.7 & -.7 & 0
+\end{bmatrix} 
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+= 
+0
+$$
+
+\subsection{Mobility}
+Rotational movement, no lateral movement.

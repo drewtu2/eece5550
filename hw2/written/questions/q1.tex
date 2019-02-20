@@ -1,0 +1,113 @@
+\section{Mobile Robot Configuration}
+\subsection{Rotation Matrix}
+$$ R_{robot}^{world} = 
+\begin{bmatrix} 
+cos\theta & -sin\theta & 0 \\
+sin\theta & cos\theta & 0 \\
+0 & 0 & 1 \\
+\end{bmatrix}
+$$
+
+$$ v_{world} = R_{robot}^{world}* 
+\begin{bmatrix} 
+vx _{robot}\\
+vy_{robot} \\
+v\theta_{robot} \\
+\end{bmatrix}
+$$
+\subsection{Velocity Problem 1}
+$$ 
+\theta = \pi/6
+$$
+$$
+v_{world} = R(\theta)* 
+\begin{bmatrix} 
+15 \\
+0 \\
+0 \\
+\end{bmatrix}
+$$
+$$
+v_{world} = 
+\begin{bmatrix} 
+12.99 \\
+7.5 \\
+0 \\
+\end{bmatrix}
+$$
+
+\subsection{Velocity Problem 2}
+$$ 
+\theta = \pi/3
+$$
+
+$$
+v_{world} = R(\theta)* 
+\begin{bmatrix} 
+0 \\
+0 \\
+2 \\
+\end{bmatrix}
+$$
+$$
+v_{world} = 
+\begin{bmatrix} 
+0 \\
+0 \\
+2 \\
+\end{bmatrix}
+$$
+
+\subsection{Velocity Problem 3}
+$$ 
+\theta = \pi/4
+$$
+
+$$
+v_{world} = R(\theta)* 
+\begin{bmatrix} 
+25 \\
+0 \\
+4 \\
+\end{bmatrix}
+$$
+
+$$
+v_{world} = 
+\begin{bmatrix} 
+17.68 \\
+17.68 \\
+4 \\
+\end{bmatrix}
+$$
+
+
+\subsection{Velocity Problem 4}
+$$ 
+\theta = -3\pi/4
+$$
+
+$$
+v_{world} = 
+\begin{bmatrix} 
+10 \\
+10 \\
+10 \\
+\end{bmatrix} 
+=
+R(\theta)* 
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix}
+$$
+
+$$
+v_{robot} = 
+\begin{bmatrix} 
+-14.14 \\
+0 \\
+10 \\
+\end{bmatrix}
+$$

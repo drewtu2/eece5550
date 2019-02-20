@@ -1,0 +1,94 @@
+\section{Question 2}
+\bf{Rolling Constraints:}
+$$
+\begin{bmatrix} 
+sin(\alpha + \beta) & -cos(\alpha + \beta) & -lcos(\beta)
+\end{bmatrix}
+%% Times
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+-
+r \dot{\varphi}
+= 0
+$$
+\bf{Sliding Constraints:}
+$$
+\begin{bmatrix} 
+cos(\alpha + \beta) & sin(\alpha + \beta) & lsin(\beta)
+\end{bmatrix}
+%% Times
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+= 0
+$$
+
+\subsection{ICC}
+$$
+ICC = \dfrac{l}{2}* \dfrac{(\phi_1 + \phi_2)}{\phi_1 - \phi_2}
+$$
+
+\subsection{Rolling Constraints}
+$$
+\alpha_1 =  90, 
+\beta_1 = 0,
+l = b
+$$
+$$
+\alpha_2 =  270, 
+\beta_2 = 0,
+l = b
+$$
+
+$$
+\begin{bmatrix} 
+1 & 0 & -b\\
+-1 & 0 & -b\\
+\end{bmatrix} 
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+= r 
+ \begin{bmatrix} 
+\phi_1 \\
+\phi_2
+\end{bmatrix}
+$$
+
+\subsection{Sliding Constraints}
+$$
+\alpha_1 =  90, 
+\beta_1 = 0,
+l = b
+$$
+$$
+\alpha_2 =  270, 
+\beta_2 = 0,
+l = b
+$$
+$$
+\begin{bmatrix} 
+0 & 1 & 0\\
+0 & -1 & 0\\
+\end{bmatrix} 
+\begin{bmatrix} 
+u \\
+v \\
+\omega \\
+\end{bmatrix} 
+= 
+0
+$$
+
+\subsection{Holonomic vs. Non-Holonomic}
+Non-holonomic since the robot cannot move in the in the y direction. 
+
+\subsection{Mobility}
+Can move back and forth along x direction. 
